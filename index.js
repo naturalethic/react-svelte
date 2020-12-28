@@ -19,11 +19,11 @@ export default class SvelteComponent extends React.Component {
 	}
 
 	componentDidUpdate() {
-		this.instance.set(this.props);
+		this.instance.$set(this.props);
 	}
 
 	componentWillUnmount() {
-		this.instance.destroy();
+		this.instance.$destroy();
 	}
 
 	render() {
